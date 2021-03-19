@@ -1,5 +1,5 @@
 <template>
-  <v-container class="home-container">
+  <v-container class="home-container" fluid fill-height>
     <v-row class="profile-box d-flex flex-row">
       <v-col class="col-3">
         <v-avatar size="250">
@@ -37,12 +37,16 @@ export default {
 .home-container{
   min-width: 980px;
   max-width: 1100px;
+  overflow-x: auto;
+  width: 100vw;
 }
 .profile-box{
   background: linear-gradient(#4ca1af, #c4e0e5);
   height: 300px;
+   overflow-x: auto;
 }
 .data-box{
-  background-color: white;
+  background-color: lightgreen;
+   overflow-x: auto;
 }
 </style>
